@@ -8,9 +8,19 @@
 </head>
 <body>
 
-  <div id="magic-ball">
+  <div id="magic-ball" class="view">
     <img id="shake-it" src="img/ball.png" alt="Shake It!" />
     <div id="message"></div>
+  </div>
+
+  <div id="messages" class="view hidden">
+    <p>Type in your messages here. One per line.</p>
+    <div><textarea cols="30" rows="5" id="messages-textbox"></textarea></div>
+    <input id="save-button" type="button" value="Save">
+  </div>
+
+  <div>
+    <input id="settings-button" type="button" value="Settings">
   </div>
 
 </body>
