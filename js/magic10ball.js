@@ -37,7 +37,6 @@ function swap() {
 }
 var timeoutID = null;
 function shake_resolve() {
-    document.body.style.background = '#'+Math.floor(Math.random()*16777215).toString(16);
     /* Lame code here. */
     var ball = document.getElementById('shake-it');
     for (var i=0; i < ball.classList.length; i++) {
@@ -66,6 +65,7 @@ function shake() {
         .getElementById('message')
         .innerHTML = 'Shaking....';
     timeoutID = window.setTimeout(shake_resolve, 1500);
+    document.body.style.background = '#'+Math.floor(Math.random()*16777215).toString(16);
 }
 function init() {
     document

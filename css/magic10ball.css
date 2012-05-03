@@ -3,7 +3,7 @@ body {
     background: black;
     text-align: center;
     -moz-transition-property: background;  
-    -moz-transition-duration: 1.5s; 
+    -moz-transition-duration: 2s; 
 }
 
 #message {
