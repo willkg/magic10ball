@@ -1,0 +1,14 @@
+body {
+	background: black;
+	text-align: center;
+}
+
+#message {
+	background: #fff;
+	border-radius: 10px;
+	font-size: 30px;
+	min-height: 30px;
+	margin: 20px auto;
+	padding: 20px;
+	width: 300px;
+}
