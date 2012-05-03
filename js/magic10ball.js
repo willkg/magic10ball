@@ -38,6 +38,17 @@ function swap() {
 var timeoutID = null;
 function shake_resolve() {
     document.body.style.background = '#'+Math.floor(Math.random()*16777215).toString(16);
+    /* Lame code here. */
+    var ball = document.getElementById('shake-it');
+    for (var i=0; i < ball.classList.length; i++) {
+        var cls = ball.classList[i]
+        if (cls.substr(0, 4) == 'shak') {
+            ball.classList.remove(cls);
+        }
+    }
+    document
+        .getElementById('shake-it')
+        .classList.remove('shaking');
     document
         .getElementById('message')
         .innerHTML = randomMessage();
@@ -47,6 +58,10 @@ function shake() {
     if (timeoutID != null) {
         return;
     }
+    var transform = Math.round(Math.random() * 2) + 1;
+    document
+        .getElementById('shake-it')
+        .classList.add('shaking' + transform);
     document
         .getElementById('message')
         .innerHTML = 'Shaking....';
