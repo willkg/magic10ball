@@ -1,0 +1,18 @@
+{
+  "name": "Magic 10 Ball",
+  "description": "Magic 10 Ball",
+  "icons": {
+    "120": "/img/Magic10Ball.png"
+  },
+  "launch_path": "/",
+  "developer": {
+    "name": "",
+    "url": ""
+  },
+  "locales": {
+  },
+  "default_locale": "en-US",
+  "required_features": [],
+  "orientation": "portrait",
+  "fullscreen": "true"
+}
