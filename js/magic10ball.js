@@ -19,6 +19,7 @@ function randomMessage() {
 function saveMessages() {
     var data = document.getElementById('messages-textbox').value;
     window.localStorage.setItem(STORAGE_KEY, data);
+    swap();
 }
 function swap() {
     var children = document.body.children;
@@ -34,17 +35,27 @@ function swap() {
         }
     }
 }
-
+var timeoutID = null;
+function shake_resolve() {
+    document.body.style.background = '#'+Math.floor(Math.random()*16777215).toString(16);
+    document
+        .getElementById('message')
+        .innerHTML = randomMessage();
+    timeoutID = null;
+}
+function shake() {
+    if (timeoutID != null) {
+        return;
+    }
+    document
+        .getElementById('message')
+        .innerHTML = 'Shaking....';
+    timeoutID = window.setTimeout(shake_resolve, 1500);
+}
 function init() {
     document
         .getElementById('shake-it')
-        .addEventListener('click', function() {
-            document.body.style.background = '#'+Math.floor(Math.random()*16777215).toString(16);
-            document
-            	.getElementById('message')
-            	.innerHTML = randomMessage();
-
-        });
+        .addEventListener('click', shake);
     /* TODO:
     window
         .addEventListener(

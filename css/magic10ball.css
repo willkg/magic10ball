@@ -1,9 +1,11 @@
 body {
+    color: #eee;
 	background: black;
 	text-align: center;
 }
 
 #message {
+    color: #000;
 	background: #fff;
 	border-radius: 10px;
 	font-size: 30px;
@@ -11,6 +13,10 @@ body {
 	margin: 20px auto;
 	padding: 20px;
 	width: 300px;
+}
+
+#messages-box {
+    margin: 30px;
 }
 
 .hidden {

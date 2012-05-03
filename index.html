@@ -9,18 +9,21 @@
 <body>
 
   <div id="magic-ball" class="view">
+    <h1>Shake the 10-ball</h1>
     <img id="shake-it" src="img/ball.png" alt="Shake It!" />
     <div id="message"></div>
+    <input id="settings-button" type="button" value="Settings">
   </div>
 
   <div id="messages" class="view hidden">
-    <p>Type in your messages here. One per line.</p>
-    <div><textarea cols="30" rows="5" id="messages-textbox"></textarea></div>
-    <input id="save-button" type="button" value="Save">
+    <h1>Settings</h1>
+    <div id="messages-box">
+      <p>Type in your messages here. One per line.</p>
+      <div><textarea cols="40" rows="6" id="messages-textbox"></textarea></div>
+    </div>
+    <input id="save-button" type="button" value="Save messages">
   </div>
 
-  <div>
-    <input id="settings-button" type="button" value="Settings">
   </div>
 
 </body>
