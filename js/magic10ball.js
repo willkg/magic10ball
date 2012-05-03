@@ -8,7 +8,7 @@ var messages = [
 ];
 
 function randomMessage() {
-    return messages[Math.floor(Math.random() * messages.length)];
+    return messages[Math.round(Math.random() * messages.length)];
 }
 function init() {
     document
