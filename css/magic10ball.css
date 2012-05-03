@@ -1,18 +1,20 @@
 body {
     color: #eee;
-	background: black;
-	text-align: center;
+    background: black;
+    text-align: center;
+    -moz-transition-property: background;  
+    -moz-transition-duration: 1.5s; 
 }
 
 #message {
     color: #000;
-	background: #fff;
-	border-radius: 10px;
-	font-size: 30px;
-	min-height: 30px;
-	margin: 20px auto;
-	padding: 20px;
-	width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    font-size: 30px;
+    min-height: 30px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
 }
 
 #messages-box {
