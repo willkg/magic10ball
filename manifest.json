@@ -2,7 +2,7 @@
   "name": "Magic 10 Ball",
   "description": "Magic 10 Ball",
   "icons": {
-    "120": "/style/icons/magic10ball.png"
+    "120": "/img/magic10ball.png"
   },
   "launch_path": "/",
   "developer": {
