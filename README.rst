@@ -2,9 +2,20 @@
 Magic 10 Ball
 =============
 
-This is a "toy" project fiddling with building B2G apps. Turns out
-it's just like writing web sites and it was both pretty easy and
-really interesting.
+The magic 10 ball is your decision making system for superior decision
+making.
+
+But seriously, this is a "toy" project fiddling with building B2G
+apps. Turns out it's just like writing web sites and it was both
+pretty easy and really interesting.
+
+
+Why "magic 10 ball"?
+====================
+
+10 octal = 8 decimal
+
+for some reason, Will thought that was clever.
 
 
 Status: May 4th, 2012
