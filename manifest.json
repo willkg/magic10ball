@@ -1,18 +1,21 @@
 {
+  "version": "1.0",
   "name": "Magic 10 Ball",
   "description": "Magic 10 Ball",
   "icons": {
-    "120": "/img/magic10ball.png"
+    "16": "/img/ball-16.png",
+    "48": "/img/ball-48.png",
+    "120": "/img/magic10ball-120.png",
+    "128": "/img/ball-128.png"
   },
-  "launch_path": "/",
   "developer": {
-    "name": "",
-    "url": ""
+    "name": "Ricky and Will",
+    "url": "http://bluesock.org/~willg/magic10ball/"
   },
-  "locales": {
-  },
-  "default_locale": "en-US",
-  "required_features": [],
-  "orientation": "portrait",
-  "fullscreen": "true"
+  "launch_path": "/~willg/magic10ball/",
+  "installs_allowed_from": [
+    "https://appstore.mozillalabs.com",
+    "https://apps-preview.mozilla.org",
+    "https://bluesock.org"
+  ]
 }
