@@ -4,6 +4,8 @@
   <meta charset="utf-8"/>
   <title>Magic 10 Ball</title>
   <link rel="stylesheet" type="text/css" media="screen" href="css/magic10ball.css"/>
+  <link rel="shortcut icon" type="image/png" href="img/ball-16.png">
+  <link rel="app-manifest" href="manifest.webapp">
   <script type="text/javascript" src="js/magic10ball.js" defer></script>
 </head>
 <body>
@@ -24,5 +26,22 @@
     <input id="save-button" type="button" value="Save messages">
   </div>
 
+  <div id="install_button" style="display:none">
+    INSTALL
+  </div>
 </body>
+<script src="js/mozApp.js"></script>
+<script src="js/jquery-1.4.2.min.js"></script>
+<script>
+$(document).ready(function() {
+    if (!mozApp.isRunning()) {
+        $("#install_button").show();
+        $("#install_button").click(function() {
+            mozApp.install(function() {
+                $("#install_button").hide();
+            });
+        });
+    };
+});
+</script>
 </html>
