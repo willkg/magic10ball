@@ -13,9 +13,7 @@
     "url": "http://bluesock.org/~willg/magic10ball/"
   },
   "launch_path": "/~willg/magic10ball/",
-  "installs_allowed_from": [
-    "https://appstore.mozillalabs.com",
-    "https://apps-preview.mozilla.org",
-    "https://bluesock.org"
-  ]
+  "installs_allowed_from": ["*"],
+  "orientation": "portrait",
+  "fullscreen": "true"
 }
