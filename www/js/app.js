@@ -39,7 +39,7 @@ define(function(require) {
       };
       function randomMessage() {
         var messages = getMessages();
-        return messages[Math.round(Math.random() * (messages.length - 1))];
+        return 'magic10ball says: ' + messages[Math.round(Math.random() * (messages.length - 1))];
       };
       function changeMessages() {
         // XXX: This is kind of terrible.
