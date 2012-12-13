@@ -42,3 +42,79 @@ x-listview.list li:before {
     margin-right: 5px;
     vertical-align: middle;
 }
+
+#magic-ball {
+    text-align: center;
+}
+
+#message-holder {
+    position: absolute;
+    top: 300px;
+    left: 0px;
+    margin: auto;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+#message {
+    padding: 0px;
+    margin: auto;
+    text-align: center;
+}
+
+#messages-box {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+@-moz-keyframes backandforth1 {
+    from {
+        margin-left: 10%;
+        margin-top: -2%;
+    }
+    to {
+        margin-left: -10%;
+        margin-top: 2%;
+    }
+}
+
+.shaking1 {
+    -moz-animation-duration: 0.1s;
+    -moz-animation-name: backandforth1;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+}
+
+@-moz-keyframes backandforth2 {
+    from {
+        margin-top: -1%;
+    }
+    to {
+        margin-top: 1%;
+    }
+}
+
+.shaking2 {
+    -moz-animation-duration: 0.1s;
+    -moz-animation-name: backandforth2;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+}
+
+@-moz-keyframes backandforth3 {
+    from {
+        width: 220px;
+    }
+    to {
+        width: 180px;
+    }
+}
+
+.shaking3 {
+    -moz-animation-duration: 0.1s;
+    -moz-animation-name: backandforth3;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+}

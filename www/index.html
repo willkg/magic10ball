@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
 
-    <title></title>
-    <meta name="description" content="">
+    <title>magic10ball</title>
+    <meta name="description" content="it's the magic10ball.">
     <meta name="viewport" content="width=device-width">
 
     <!-- Place favicon.ico in the root directory -->
@@ -14,82 +14,47 @@
     <link rel="stylesheet" href="css/layouts.css">
   </head>
   <body>
-    <!-- Use this installation button to install locally without going
-         through the marketpace (see app.js) -->
-    <!-- <button id="install-btn">Install</button>     -->
-
     <div class="loading">Loading...</div>
 
     <x-view id="app">
       <x-view class="home">
-        <x-view class="homesub">
-          <header>
-            <h1>Home</h1>
-          </header>
+        <header>
+          <h1>magic10ball</h1>
+        </header>
 
-          <p>Welcome to your next app!</p>
+        <div id="magic-ball" class="view">
+          <img id="shake-it" src="img/ball.png" alt="Shake It!" />
+        </div>
 
-          <p>
-            The "List" button below opens up a list view and pushes it
-            on the navigation stack, so you can press back to get back
-            here. The buttons at the bottom switch between different
-            views like tabs.
-          </p>
+        <div id="message-holder">
+          <div id="message">Shake the magic10ball</div>
+        </div>
 
-          <p>
-            When a view is pushed onto the navigation stack, it slides
-            open and a "back" button is automatically added to the
-            header (if it has one).
-          </p>
-
-          <p>
-            <strong>
-              View more documentation in
-              the <a href="http://github.com/mozilla/mortar-tab-view/">README</a>.
-            </strong>
-          </p>
-
-          <footer>
-            <button data-view=".list">List</button>
-          </footer>
-        </x-view>
-
-        <x-listview class="list">
-          <header>
-            <h1>Items</h1>
-          </header>
-        </x-listview>
-
-        <x-view class="details">
-          <header><h1>Details</h1></header>
-          
-          This item has the title "<span class="title"></span>"
-        </x-view>
+        <footer>
+          <button id="change-messages" data-view=".messages">settings</button>
+        </footer>
       </x-view>
 
-      <x-view class="foo">
-        <h1>Section #1</h1>
-        <p>
-          This is another section. If you go back to the "Home"
-          section, notice that it puts you back exactly where you were
-          before you switched tabs (if you opened and subviews or
-          scrolled).
-        </p>
-      </x-view>
+      <x-view class="messages">
+        <header>
+          <h1>settings</h1>
+        </header>
 
-      <x-view class="bar">
-        <h1>Section #2</h1>
-        <button>Press me!</button>
-        <p>
-          This is yet another section. The button above does nothing.
-        </p>
-      </x-view>
+        <div id="messages-box">
+          <div>
+            <p>Type in your messages here. One per line.</p>
+            <textarea cols="37" rows="6" id="messages-textbox"></textarea>
+          </div>
+          <button id="save-messages">Save messages</button>
+        </div>
 
-      <footer>
-        <button data-view=".home">Home</button>
-        <button data-view=".foo">Section #1</button>
-        <button data-view=".bar">Section #2</button>
-      </footer>
+        <!-- Use this installation button to install locally without going
+             through the marketpace (see app.js) -->
+
+        <button id="install-btn">Install</button>
+
+        <footer></footer>
+      </x-view>
     </x-view>
 
     <!-- Using require.js, a module system for javascript, include the

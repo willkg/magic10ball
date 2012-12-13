@@ -49,7 +49,7 @@ define(function(require) {
 
         styles = vendorized('transitionDuration', duration, styles);
         styles = vendorized('transitionProperty', property, styles);
-        styles = vendorized('transitionTimingFunction', 'ease-in-out', styles);
+        styles = vendorized('transitionTimingFunction', 'ease', styles);
         node.css(styles);
 
         if(bury) {
@@ -79,11 +79,11 @@ define(function(require) {
     }
 
     function slideLeft(node) {
-        animateX(node, $(node).width(), 0, '300ms');
+        animateX(node, $(node).width(), 0, '400ms');
     }
 
     function slideRightOut(node) {
-        animateX(node, 0, $(node).width(), '300ms', true);
+        animateX(node, 0, $(node).width(), '400ms', true);
     }
 
     return {
