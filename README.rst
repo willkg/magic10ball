@@ -63,4 +63,13 @@ everything is.
 
 ::
 
-    volo serve
+    $ volo serve
+
+
+How to deploy
+=============
+
+::
+
+    $ volo build
+    $ volo ghdeploy
