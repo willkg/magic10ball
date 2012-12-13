@@ -4,9 +4,9 @@
   "description": "This is the wondrous magic10ball.",
   "launch_path": "/magic10ball/",
   "icons": {
-    "16": "/img/icons/ball-16.png",
-    "48": "/img/icons/ball-48.png",
-    "128": "/img/icons/ball-128.png"
+    "16": "/magic10ball/img/icons/ball-16.png",
+    "48": "/magic10ball/img/icons/ball-48.png",
+    "128": "/magic10ball/img/icons/ball-128.png"
   },
   "developer": {
     "name": "Will Kahn-Greene",
