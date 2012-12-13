@@ -9,14 +9,14 @@
     background: linear-gradient(to bottom,  #0088cc 0%,#0055cc 100%); 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0088cc', endColorstr='#0055cc',GradientType=0 ); 
     text-align: center;
-    font-size: 150%;
+    font-size: 140%;
     margin: .1em auto;
     display: block;
     padding: .1em;
     color: white;
     width: 6em;
     max-width: 80%;
-    line-height: 1.2em;
+    line-height: 1.1em;
 }
 html,
 body {
