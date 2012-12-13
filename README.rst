@@ -53,3 +53,14 @@ Also:
 * https://developer.mozilla.org/en/Apps/Getting_Started
 * https://developer.mozilla.org/en/Mozilla/Boot_to_Gecko/Writing_a_web_app
 
+
+How to hack
+===========
+
+This uses volo. So, launch the site in volo and fiddle with things in
+``www/``, ``www/css/``, and ``www/js/`` and that's pretty much where
+everything is.
+
+::
+
+    volo serve
