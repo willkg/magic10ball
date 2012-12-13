@@ -1,0 +1,19 @@
+{
+  "version": "0.2",
+  "name": "magic10ball",
+  "description": "This is the wondrous magic10ball.",
+  "launch_path": "/",
+  "icons": {
+    "16": "/img/icons/ball-16.png",
+    "48": "/img/icons/ball-48.png",
+    "128": "/img/icons/ball-128.png"
+  },
+  "developer": {
+    "name": "Will Kahn-Greene",
+    "url": "http://bluesock.org/~willg/"
+  },
+  "installs_allowed_from": ["*"],
+  "appcache_path": "/cache.manifest",
+  "locales": {},
+  "default_locale": "en"
+}

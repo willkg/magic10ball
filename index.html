@@ -1,1 +1,68 @@
-Setting up pages...
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>magic10ball</title>
+    <meta name="description" content="it's the magic10ball.">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/install-button.css">
+    <link rel="stylesheet" href="css/layouts.css">
+  </head>
+  <body>
+    <div class="loading">Loading...</div>
+
+    <x-view id="app">
+      <x-view class="home">
+        <header>
+          <h1>magic10ball</h1>
+        </header>
+
+        <div id="magic-ball" class="view">
+          <img id="shake-it" src="img/ball.png" alt="Shake It!" />
+        </div>
+
+        <div id="message-holder">
+          <div id="message">Shake the magic10ball</div>
+        </div>
+
+        <footer>
+          <button id="change-messages" data-view=".messages">settings</button>
+        </footer>
+      </x-view>
+
+      <x-view class="messages">
+        <header>
+          <h1>settings</h1>
+        </header>
+
+        <div id="messages-box">
+          <div>
+            <p>Type in your messages here. One per line.</p>
+            <textarea cols="37" rows="6" id="messages-textbox"></textarea>
+          </div>
+          <button id="save-messages">Save messages</button>
+        </div>
+
+        <!-- Use this installation button to install locally without going
+             through the marketpace (see app.js) -->
+
+        <button id="install-btn">Install</button>
+
+        <footer></footer>
+      </x-view>
+    </x-view>
+
+    <!-- Using require.js, a module system for javascript, include the
+         js files. This loads "main.js", which in turn can load other
+         files, all handled by require.js:
+         http://requirejs.org/docs/api.html#jsfiles -->
+    <script type="text/javascript"
+            data-main="js/init.js"
+            src="js/lib/require.js"></script>
+  </body>
+</html>
