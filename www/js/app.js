@@ -93,31 +93,5 @@ define(function(require) {
       $('#messages-textbox').keypress(changeMessages);
       $('#save-messages').click(saveMessages);
       $('#change-messages').click(changeMessages);
-
-        // List view
-        // var list = $('.list').get(0);
-        // list.add({ title: 'Cook yummy food',
-        //            desc: 'COOK ALL THE THINGS',
-        //            date: new Date() });
-        // list.add({ title: 'Make things',
-        //            desc: 'Make this look like that',
-        //            date: new Date(12, 9, 5) });
-        // list.add({ title: 'Move stuff',
-        //            desc: 'Move this over there',
-        //            date: new Date(12, 10, 1) });
-        // list.add({ title: 'Cook yummy food',
-        //            desc: 'COOK ALL THE THINGS',
-        //            date: new Date() });
-        // list.add({ title: 'Make things',
-        //            desc: 'Make this look like that',
-        //            date: new Date(12, 9, 5) });
-
-        // list.nextView = 'x-view.details';
-
-        // Detail view
-        // var details = $('.details').get(0);
-        // details.render = function(item) {
-        //     $('.title', this).text(item.get('title'));
-        // };
     });
 });
